@@ -1,0 +1,9 @@
+Steps for Data stream problem
+
+1. I Create a class DataStream and inside constructor i take an empty dictionary name last printed in which i add last timestamp of data string
+
+2. defined a function should_output_data_str that accept timestamp and data_string that will be pass while calling the function.
+
+3 Intial we check if data_string and its timestamp present or not if not , i take (-5) value as initial value for t+5 condition
+
+4. We take a condition subtracting the last timestamp from current timestamp so if same string with timestamp less than 5 sec consider as false.
