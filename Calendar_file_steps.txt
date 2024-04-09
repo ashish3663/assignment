@@ -1,0 +1,18 @@
+Calendar file steps
+
+1. The first problem was in the file it check for node.start <= self.end: due to which double booking occuring as if another node start is less than current end then definately it double book.
+
+2. After this condition it try to add under right child instead of left child if value is less we need to add in left sub tree of BST.
+
+
+3 Similary for second condition it check node.end >= current node start due to which again double booking occur we need to check node.end <= current node start.
+
+4. After this condition also it try to add in left child but it need to add in right child as it is greater.
+
+
+Solution
+
+
+1. In first conditon i check node.end < = self.start so that we determine this event is before the current start time and then i added it in left child as it is before.
+
+2. In Second condition i check node.start >= self.end so that we determine the event is after the current event time and then i added it in in right child at is after.
