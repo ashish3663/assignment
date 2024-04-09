@@ -1,0 +1,7 @@
+Steps for Fuel Station Problem
+
+1. Create a FuelStation class and inside constructor we take all fuel type as int and define 2 dictionary, total_slots for total no of slots available for a fuel type and car_type for increase or decrease the slots while fueling or open slots.
+
+2. defined fuel_vehicle function that accept fuel_type in which i checked for the fuel type weather its availblity is greater zero or not , if yes simply decrease one value and return true or not available return false.
+
+3.defined another function as mentioned in query as open_fuel_slot in which i first check weather the fuel type is there or not so we kept conditon >= 0 as it confirms it availiblity then check weather the fuel_type value in car_type less then the total slots that are define if condition satisfy i simply open a slot and return true also check it can open only that number of slots that are initial defined otherwise return false. 
